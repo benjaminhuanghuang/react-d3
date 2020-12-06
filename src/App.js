@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import './App.css';
 //
 import Header from './components/Header';
-import Home from './components/Home';
-import Dashboard from './components/Dashboard';
-
+import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
+import HookDemo from './pages/HookDemo';
 
 
 class App extends Component {
@@ -17,6 +17,7 @@ class App extends Component {
           <Header/>
           <Route exact path="/" component={Home}/>
           <Route exact path="/dashboard" component={Dashboard}/>
+          <Route exact path="/hook-demo" component={HookDemo}/>
         </div>
        </BrowserRouter>
     );
